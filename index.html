@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container mt-5" style="margin-bottom: 500px">
+    <div class="mt-2">
+      <!-- VD1 -->
+      <div>
+        <h3>Vi du 1: Tinh gia tri cua 1 so</h3>
+        <div class="form-group">
+          <p>Nhap vao 1 so</p>
+          <input
+            type="number"
+            name=""
+            id="iSo_1"
+            class="form-control w-25 mt-3"
+          />
+        </div>
+        <button onclick="tinhSo()" class="btn btn-primary mt-3">
+          Tinh tri tuyet doi
+        </button>
+        <div id="ketQuaVidu1"></div>
+      </div>
+
+      <!-- VD2 -->
+      <div>
+        <h3 class="mt-5">
+          Vi du 2: Viet chuong trinh cho phep nguoi dung nhap vao 1 so => in ra
+          man hinh cho biet so do chan hay le
+        </h3>
+        <div class="form-group">
+          <p>Nhap 1 so bat ky</p>
+          <input type="number" class="form-control w-25" id="iSo_2" />
+          <button
+            onclick="kiemTraSo()"
+            id="btnKienTraSo"
+            class="btn btn-primary mt-3"
+          >
+            Kiem Tra So
+          </button>
+          <div id="ketQuaViDu2"></div>
+        </div>
+      </div>
+
+      <!-- VD 3 -->
+      <div>
+        <h3 class="mt-5">
+          Viet chuong trinh nhap diem trung binh. Neu lon hon or bang 5 thi in
+          ra la dau, be hon 5 in ra la rot
+        </h3>
+        <div class="form-group">
+          <p>Nhap diem trung binh</p>
+          <input
+            type="number"
+            id="diemTrungBinh"
+            class="form-control mt-3 w-25"
+          />
+          <button
+            onclick="xepLoai()"
+            id="btnXepLoai"
+            class="btn btn-primary mt-3"
+          >
+            Xep Loai
+          </button>
+        </div>
+        <div id="ketQuaViDu3"></div>
+      </div>
+
+      <!-- VD4 -->
+      <div>
+        <h3 class="mt-5">
+          Vi du 2: Viet chuong trinh cho nguoi dung nhap vao 2 so bat ky va in
+          ra ket qua lon nhat
+        </h3>
+        <p>So thu 1</p>
+        <input type="number" id="soThuNhat" class="form-control mt-3 w-25" />
+        <p class="mt-4">So thu 2</p>
+        <input type="number" id="soThuHai" class="form-control mt-3 w-25" />
+        <button onclick="kiemTra()" class="btn btn-primary mt-3">
+          Kiem Tra Ngay
+        </button>
+        <div id="ketQuaViDu4"></div>
+      </div>
+
+      <!-- VD5 -->
+
+      <div>
+        <h3 class="mt-5">
+          Vi Du 5: Viet chuong trinh cho phep so nguoi dung nhap vao so gio lam
+          va tien cong 1 h. yeu cau tinh tien dua tren tien cong do theo cong
+          thuc sau
+        </h3>
+
+        <div class="alert alert-danger">
+          <p>Neu so gio lam <= 40: Tien cong = so gio lam * tien cong 1h</p>
+          <p>
+            Neu so gio lam >40. Tien cong = 40 * tien cong 1h + (so gio - 40) *
+            tien cong 1h * 1,5
+          </p>
+        </div>
+        <div class="form-group">
+          <p>Nhap so gio lam</p>
+          <input type="number" id="soGio" class="form-control mt-3 w-25" />
+        </div>
+        <div class="form-group">
+          <p>Nhap tien cong 1h</p>
+          <input
+            type="number"
+            id="tienCongTrenGio"
+            class="form-control mt3 w-25"
+          />
+        </div>
+        <button onclick="tinhTien()" class="btn btn-primary mt-3">
+          Tinh Tien
+        </button>
+        <div id="ketQuaViDu5"></div>
+      </div>
+      <!-- ket thuc -->
+    </div>
+
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>
