@@ -7,16 +7,29 @@ function sapXep() {
 
   // output
 
-// xu ly
+  var soChan = 0;
+  var soLe = 0;
 
-if (stn % 2 == 0){
-    var stNhat= "so chan"
-}
-else {
-    
-}
+  // xu ly
 
-  //   Hien ra man hinh
+  if (stn % 2 == 0) {
+    soChan++;
+  } else {
+    soLe++;
+  }
 
-  document.getElementById("result").innerHTML =
+  if (sth % 2 == 0) {
+    soChan++;
+  } else {
+    soLe++;
+  }
+  if (stb % 2 == 0) {
+    soChan++;
+  } else {
+    soLe++;
+  }
+
+  document.getElementById(
+    "result"
+  ).innerHTML = `Co ${soChan} chan - Co ${soLe} le`;
 }
