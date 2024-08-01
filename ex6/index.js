@@ -13,6 +13,8 @@ function kiemTra() {
     kiemTra = "tam giac deu";
   } else if (cTN == cTH || cTN == cTB || cTH == cTB) {
     kiemTra = "tam giac can";
+  } else if (cTN * cTN == cTH * cTH + cTB * cTB) {
+    kiemTra = "Tam giac vuong";
   }
 
   // xuat ra man hinh
